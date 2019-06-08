@@ -19,3 +19,11 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
+notification:
+  recipients:
+  - recipient: '#notofocations'
+    notifier: c-dndxg:n-m5qbg
+  condition:
+  - Success
+  - Changed
+  - Failed
